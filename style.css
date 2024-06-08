@@ -12,7 +12,14 @@ body {
   color: #29c9ff;
   text-decoration: none;
 }
+.image-container {
+  width: 80%; /* Set the width of the container to 80% of its parent */
+  overflow: hidden; /* Hide overflow content */
+}
 
+.image-container img {
+  width: 125%; /* Set the width of the image to 125% to compensate for the 80% container width */
+}
 .styled-link:hover {
   text-decoration: underline;
 }
