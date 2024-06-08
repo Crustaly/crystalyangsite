@@ -6,22 +6,68 @@ body {
   margin: 0;
   padding: 0 20%; /* Add padding on the sides */
   background-color: #fff;
+
+}
+.styled-link {
+  color: #29c9ff;
+  text-decoration: none;
 }
 
+.styled-link:hover {
+  text-decoration: underline;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.project-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-info img {
+  width: 20px; /* Adjust the size of the logo as needed */
+  height: auto;
+}
 header {
   background-color: #fff;
   padding: 40px;
   text-align: center;
 }
-
-
-header img {
-  vertical-align: middle;
+footer {
+  padding: 20px 0;
+  text-align: center;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link {
+  display: inline-flex; /* Use inline-flex to center vertically */
+  align-items: center; /* Center vertically */
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #c8f1fe;
+  padding: 10px;
+  width: 30px; /* Set the width and height to create a perfect circle */
+  height: 30px;
+}
+
+.footer-link img {
+    width: 70%; /* Adjust the width of the image */
+    height: auto;
+    display: block;
+    margin: auto; /* Center the image horizontally */
+}
 
 #title {
     display: inline;
+  font-family: 'Poppins', sans-serif;
     font-size: 50px;
     margin-left: 10px;
     color: #000; /* Dark black color */
