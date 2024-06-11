@@ -16,7 +16,20 @@ body {
   width: 80%; /* Set the width of the container to 80% of its parent */
   overflow: hidden; /* Hide overflow content */
 }
-
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+.image-row img {
+  width: 30%;
+  height: auto;
+  border: 5px solid #53b9f9;
+  border-radius: 5px;
+  
+}
 .image-container img {
   width: 125%; /* Set the width of the image to 125% to compensate for the 80% container width */
 }
@@ -71,7 +84,11 @@ footer {
     display: block;
     margin: auto; /* Center the image horizontally */
 }
+#link{
+  color: #000000;
 
+  text-decoration: underline;
+}
 #title {
     display: inline;
   font-family: 'Poppins', sans-serif;
@@ -90,6 +107,9 @@ nav a {
    font-size: 20px;
   text-decoration: none;
   margin: 0 10px;
+}
+nav a.impact-link {
+  color: #0896d9; /* Darker shade of blue */
 }
 
 .container {
@@ -124,4 +144,9 @@ li {
 }
 p{
   font-size: 20px;
+}
+h3 {
+    color: #00aaff; 
+  font-size: 30px;
+   
 }
