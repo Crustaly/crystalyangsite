@@ -55,7 +55,6 @@ body {
 .gallery-header {
   margin: 40px 120px;
   text-align: left;
-  padding-left: 120px; /* Align with other left-aligned sections */
 }
 
 .gallery-header h1 {
@@ -70,90 +69,29 @@ body {
   margin-bottom: 20px;
   color: #000000;
 }
-
-/* Gallery Container and Image Carousel Styling */
-.gallery-container {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.gallery-slide {
-  position: relative;
-  width: 100%;
+/* Gallery Grid Layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px 120px;
   text-align: center;
 }
 
-.gallery-image {
-  width: 100%; /* Maintain full width of the container */
-  height: 400px; /* Set a fixed height */
-  object-fit: cover; /* Ensures the image covers the entire area while maintaining aspect ratio */
-  border-radius: 15px;
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
 }
 
 .caption {
-  font-size: 18px;
-  color: #000000;
-  margin-top: 10px;
-}
-
-/* Arrow Styling for Carousel */
-.arrow {
-  position: absolute;
-  top: 50%;
-  font-size: 36px;
-  color: #000000;
-  cursor: pointer;
-  user-select: none;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  transform: translateY(-50%);
-}
-
-.arrow.left {
-  left: 10px;
-}
-
-.arrow.right {
-  right: 10px;
-}
-
-/* Responsive Adjustments */
-@media screen and (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    padding: 10px 20px;
-  }
-
-  .header-right a {
-    margin: 0 10px;
-  }
-
-  .gallery-header {
-    margin: 20px;
-    padding-left: 20px;
-    text-align: center;
-  }
-
-  .gallery-header h1 {
-    font-size: 36px;
-  }
-
-  .gallery-header .subheading {
-    font-size: 28px;
-  }
-
-  .gallery-container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .arrow {
-    font-size: 24px;
-    padding: 8px;
-  }
+  font-size: 16px;
+  color: #555;
+  margin-top: 8px;
 }
