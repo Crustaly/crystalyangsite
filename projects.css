@@ -1,0 +1,176 @@
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Center text within research-item */
+.research-item {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.research-item .project-description,
+.research-item h3,
+.research-item p {
+  text-align: center;
+  width: 100%; 
+  margin-right: 70px;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Responsive Header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #86d3ff;
+  padding: 10px 120px;
+}
+
+.header a {
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.logo-image {
+  width: 80px;
+  height: auto;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.header-right a {
+  margin: 0 20px;
+}
+
+.header a:hover {
+  color: grey;
+}
+
+/* Intro Section */
+.intro {
+  margin: 40px 120px;
+}
+
+.text-content {
+  width: 100%;
+  text-align: left;
+  padding-left: 120px; /* Align with other text */
+}
+
+.intro h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.intro .subheading {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Project Section */
+.projects {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Align project and research titles */
+.project h2, .research-content h2 {
+  font-size: 36px;
+  padding-left: 120px; /* Ensure the same left padding for titles */
+}
+
+/* Consistent project layout */
+.project-content.column-layout,
+.research-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+  padding-left: 120px; /* Ensure same left padding as titles */
+}
+
+.project-content.column-layout .project-image,
+.research-item .project-image {
+  margin-right: 30px;
+  text-align: left;
+}
+
+/* Ensure same size for all images */
+.project-image img, 
+.research-item .project-image img {
+  width: 524px;  /* Set a fixed width */
+  height: 300px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image maintains aspect ratio and fills the space */
+  margin-bottom: 10px; /* Add space below the image */
+  border-radius: 15px; /* Round the corners */
+}
+
+/* Ensure consistent font sizes for all descriptions */
+.project-description,
+.research-item .project-description {
+  text-align: left;
+  font-size: 16px; /* Set consistent font size */
+  width: 100%;
+}
+
+.project-description h3,
+.research-item h3 {
+  font-size: 24px; /* Consistent title size for all projects */
+  margin-bottom: 10px;
+}
+
+.project-description p,
+.research-item p {
+  font-size: 16px; /* Consistent paragraph size */
+  line-height: 1.6;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .project-content.column-layout,
+  .research-content {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .project-image img,
+  .research-item .project-image img {
+    width: 100%; /* Full width on smaller screens */
+    height: auto;
+  }
+
+  .project-description,
+  .research-item .project-description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .research-item {
+    margin-bottom: 40px;
+  }
+}

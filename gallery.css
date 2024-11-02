@@ -1,0 +1,159 @@
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #86d3ff;
+  padding: 10px 120px;
+}
+
+.header a {
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.logo-image {
+  width: 80px;
+  height: auto;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.header-right a {
+  margin: 0 20px;
+}
+
+.header a:hover {
+  color: grey;
+}
+
+/* Gallery Header Styling to Match Intro Section */
+.gallery-header {
+  margin: 40px 120px;
+  text-align: left;
+  padding-left: 120px; /* Align with other left-aligned sections */
+}
+
+.gallery-header h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.gallery-header .subheading {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/* Gallery Container and Image Carousel Styling */
+.gallery-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-slide {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery-image {
+  width: 100%; /* Maintain full width of the container */
+  height: 400px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image covers the entire area while maintaining aspect ratio */
+  border-radius: 15px;
+}
+
+.caption {
+  font-size: 18px;
+  color: #000000;
+  margin-top: 10px;
+}
+
+/* Arrow Styling for Carousel */
+.arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 36px;
+  color: #000000;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .header-right a {
+    margin: 0 10px;
+  }
+
+  .gallery-header {
+    margin: 20px;
+    padding-left: 20px;
+    text-align: center;
+  }
+
+  .gallery-header h1 {
+    font-size: 36px;
+  }
+
+  .gallery-header .subheading {
+    font-size: 28px;
+  }
+
+  .gallery-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .arrow {
+    font-size: 24px;
+    padding: 8px;
+  }
+}
