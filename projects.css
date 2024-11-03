@@ -4,6 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Heading styling */
+h2 {
+  font-size: 32px; /* Increase font size */
+  text-decoration: underline; /* Add underline */
+  margin-bottom: 40px; /* Increased spacing below */
+  text-align: center; /* Center-align for uniformity */
+}
+
 
 body {
   font-family: 'Nunito', sans-serif;
@@ -63,15 +71,16 @@ body {
 }
 
 .intro h1 {
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 10px;
 }
 
 .intro .subheading {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 20px;
 }
+
 /* Projects Section */
 .projects {
   max-width: 1200px;
@@ -98,11 +107,9 @@ body {
 /* Project image styling */
 .project-image img,
 .research-item .project-image img {
-  width: 100%; /* Full width within each item */
-  height: auto; /* Auto height to maintain aspect ratio */
-  max-width: 524px;
-  max-height: 300px;
-  object-fit: cover;
+  width: 500px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  object-fit: cover; /* Maintain aspect ratio and cover the area */
   margin-bottom: 10px;
   border-radius: 15px;
 }
