@@ -182,3 +182,22 @@ body {
     margin-bottom: 40px;
   }
 }
+/* Responsive styling for mobile */
+@media screen and (max-width: 768px) {
+  .intro h1 {
+    font-size: 32px; /* Adjust font size for smaller screens */
+    margin-bottom: 8px; /* Reduce margin */
+    text-align: center; /* Center-align for mobile */
+  }
+
+  .intro .subheading {
+    font-size: 24px; /* Adjust font size for smaller screens */
+    font-weight: bold;
+    margin-bottom: 16px; /* Adjust spacing for smaller screens */
+    text-align: center; /* Center-align for mobile */
+  }
+
+  .text-content {
+    padding-left: 0; /* Remove padding on smaller screens */
+  }
+}

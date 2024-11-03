@@ -1,3 +1,4 @@
+/* General styling */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,7 @@ body {
 /* Responsive Header */
 .header {
   display: flex;
-  justify-content: center; /* Center everything */
+  justify-content: center;
   align-items: center;
   background-color: #86d3ff;
   padding: 0px 120px;
@@ -31,23 +32,24 @@ body {
 
 .header a.logo {
   font-weight: bold;
-  margin-right: 3px; /* Add space between logo and nav items */
+  margin-right: 3px;
 }
+
 .logo-image {
-  width: 80px; /* Set a fixed width */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 30px; /* Add space between the logo and the nav items */
+  width: 80px;
+  height: auto;
+  margin-right: 30px;
   margin-left: 30px;
 }
 
 .header-right {
   display: flex;
-  justify-content: space-between; /* Even spacing between nav items */
+  justify-content: space-between;
   flex-grow: 1;
 }
 
 .header-right a {
-  margin: 0 20px; /* Add spacing between the navigation items */
+  margin: 0 20px;
 }
 
 .header a:hover {
@@ -57,25 +59,6 @@ body {
 .header a.active {
   background-color: transparent;
   color: black;
-}
-
-/* Responsive Media Queries */
-@media screen and (max-width: 768px) {
-  .header {
-    flex-direction: column;
-  }
-
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-    padding-left: 10px;
-  }
-
-  .header-right {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 /* Intro and content styling */
@@ -119,4 +102,61 @@ body {
 .intro .description {
   font-size: 24px;
   line-height: 1.6;
+}
+
+/* Responsive styling for mobile */
+@media screen and (max-width: 768px) {
+  /* Header adjustments */
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .header a {
+    float: none;
+    display: block;
+    text-align: center;
+    padding: 8px;
+  }
+
+  .header-right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Stack text first, then image in the intro */
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+  .text-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 80%; /* Resize image for mobile */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 0;
+    margin-top: 20px; /* Space below the text */
+  }
+
+  /* Adjust font sizes for readability on mobile */
+  .intro h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .intro .subheading {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .intro .description {
+    font-size: 18px;
+    line-height: 1.5;
+  }
 }
