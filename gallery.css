@@ -74,9 +74,17 @@ body {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 5 images per row on desktop */
-  gap: 20px;
-  padding: 20px 120px;
+  gap: 10px; /* Reduced gap for closer spacing */
+  padding: 10px 100px; /* Reduced padding on the sides */
   text-align: center;
+}
+
+.gallery-item img {
+  width: 100%; /* Ensures the image spans the width of its container */
+  aspect-ratio: 1 / 1; /* Forces a square aspect ratio */
+  object-fit: cover; /* Ensures the image covers the entire square area */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
 /* Responsive styling for mobile */
@@ -92,7 +100,7 @@ body {
   width: 100%; /* Ensures the image spans the width of its container */
   aspect-ratio: 1 / 1; /* Forces a square aspect ratio */
   object-fit: cover; /* Ensures the image covers the entire square area */
-  border-radius: 10px;
+  border-radius: 0px;
   transition: transform 0.3s ease;
 }
 .gallery-item img:hover {
